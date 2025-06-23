@@ -2,17 +2,17 @@
 <html lang="fr">
 <head>
   <meta charset="UTF-8">
-  <title>SecureBankCheck | Vérifier l’URL d’une Banque</title>
-  <link rel="stylesheet" href="assets/css/bank-url-checker.css">
+  <title>Vérifier une URL bancaire</title>
 </head>
 <body>
-  <div class="container">
-    <h2>Vérificateur d’URL de banque</h2>
-    <label for="bankUrl">Entrez l’URL de votre banque :</label>
-    <input type="text" id="bankUrl" placeholder="https://www.mabanque.com">
-    <button id="checkBtn">Vérifier</button>
-    <div id="result"></div>
+  <div class="box">
+    <h2>Vérifier une URL bancaire</h2>
+    <form id="bankUrlForm">
+      <input type="url" id="url" name="url" required placeholder="https://www.mabanque.fr">
+      <div class="help">Collez l'adresse du site bancaire à vérifier</div>
+      <button type="submit">Vérifier</button>
+    </form>
+    <div id="msg"></div>
   </div>
-  <script src="assets/js/bank-url-checker.js"></script>
 </body>
 </html>
