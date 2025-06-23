@@ -1,0 +1,49 @@
+body {
+  font-family: Arial, sans-serif;
+  background: #f6f9fc;
+  margin: 0;
+  padding: 0;
+}
+
+.conseil-container {
+  max-width: 520px;
+  margin: 60px auto 0 auto;
+  background: #fff;
+  border-radius: 14px;
+  box-shadow: 0 8px 24px #00529b18;
+  padding: 36px 28px 26px 28px;
+}
+
+.conseil-container h1 {
+  text-align: center;
+  color: #00529b;
+  margin-bottom: 22px;
+}
+
+.conseil-container ul {
+  padding-left: 20px;
+}
+
+.conseil-container li {
+  margin-bottom: 14px;
+  font-size: 1.08em;
+  color: #384a6e;
+  line-height: 1.5;
+  position: relative;
+}
+
+.conseil-container li::before {
+  content: "💡";
+  margin-right: 9px;
+  color: #0074d9;
+  font-size: 1em;
+}
+
+@media (max-width: 600px) {
+  .conseil-container {
+    padding: 16px 5px 10px 5px;
+  }
+  .conseil-container h1 {
+    font-size: 1.3em;
+  }
+}
